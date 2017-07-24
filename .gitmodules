@@ -1,0 +1,12 @@
+[submodule "OAuth2Server"]
+	path = OAuth2Server
+	url = git@github.com:IUNO-TDM/OAuth2Server.git
+[submodule "MarketplaceCore"]
+	path = MarketplaceCore
+	url = git@github.com:IUNO-TDM/MarketplaceCore.git
+[submodule "JuiceMachineService"]
+	path = JuiceMachineService
+	url = git@github.com:IUNO-TDM/JuiceMachineService.git
+[submodule "JuiceMarketplaceWebsite"]
+	path = JuiceMarketplaceWebsite
+	url = git@github.com:IUNO-TDM/JuiceMarketplaceWebsite.git
