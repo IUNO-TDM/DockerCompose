@@ -10,3 +10,6 @@
 [submodule "auth/OAuth2Server"]
 	path = auth/OAuth2Server
 	url = git@github.com:IUNO-TDM/OAuth2Server.git
+[submodule "ps/PaymentService"]
+	path = ps/PaymentService
+	url = git@github.com:IUNO-TDM/PaymentService.git

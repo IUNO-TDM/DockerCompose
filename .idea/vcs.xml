@@ -2,5 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/auth/OAuth2Server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/core/MarketplaceCore" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jms/JuiceMachineService" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jmw/JuiceMarketplaceWebsite" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ps/PaymentService" vcs="Git" />
   </component>
 </project>
