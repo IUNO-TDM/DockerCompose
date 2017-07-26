@@ -16,3 +16,9 @@
 [submodule "bv/BitcoinVault"]
 	path = bv/BitcoinVault
 	url = git@github.com:goergch/BitcoinVault.git
+[submodule "vault/BitcoinVault"]
+	path = vault/BitcoinVault
+	url = git@github.com:goergch/BitcoinVault.git
+[submodule "payment/PaymentService"]
+	path = payment/PaymentService
+	url = git@github.com:IUNO-TDM/PaymentService.git
