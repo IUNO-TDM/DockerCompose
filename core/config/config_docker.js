@@ -30,8 +30,8 @@ self.HOST_SETTINGS = {
 self.DB_CONNECTION_STRING = 'postgres://{0}:{1}@{2}:{3}/{4}'.format(username, password, host, port, database);
 self.LOG_LEVEL = 'debug';
 self.OAUTH_CREDENTIALS = {
-    CLIENT_ID: '9f400def-9680-4ad1-a228-00724dbbd983',
-    CLIENT_SECRET: 'ce0eabeb-123b-45f7-931f-3a9d535c23a9'
+    CLIENT_ID: 'bdb4c297-45bd-437e-ac90-9179eea41730',
+    CLIENT_SECRET: 'IsSecret'
 };
 
 module.exports = self;

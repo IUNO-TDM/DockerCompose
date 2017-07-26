@@ -43,8 +43,8 @@ self.OAUTH_PROVIDER = {
 };
 
 self.OAUTH_CREDENTIALS = {
-    CLIENT_ID: '43d9bfb5-cdf4-4a00-9658-175397a69efc',
-    CLIENT_SECRET: 'is secret ;-)'
+    CLIENT_ID: 'adb4c297-45bd-437e-ac90-9179eea41730',
+    CLIENT_SECRET: 'IsSecret'
 };
 
 
