@@ -13,3 +13,6 @@
 [submodule "ps/PaymentService"]
 	path = ps/PaymentService
 	url = git@github.com:IUNO-TDM/PaymentService.git
+[submodule "bv/BitcoinVault"]
+	path = bv/BitcoinVault
+	url = git@github.com:goergch/BitcoinVault.git

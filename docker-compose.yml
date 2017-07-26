@@ -25,5 +25,13 @@ services:
     build: auth/OAuth2Server/SqlScripts
     ports:
       - "5432:5432"
+  payment:
+    build: payment
+    ports:
+      - "8080:8080"
+  vault:
+    build: vault
+    ports:
+      - "8081:8081"
 
 
