@@ -11,11 +11,11 @@ self.LOG_LEVEL = 'debug';
 
 self.HOST_SETTINGS = {
     MARKETPLACE_CORE: {
-        HOST: 'test-tdm.fritz.box',
+        HOST: 'core',
         PORT: 3002
     },
     OAUTH_SERVER: {
-        HOST: 'test-tdm.fritz.box',
+        HOST: 'auth',
         PORT: 3006
     }
 };

@@ -14,9 +14,9 @@ var self = {
 };
 
 
-var username = 'postgres';
-var password = 're7ahpheibaiweey';
-var host = 'test-tdm.fritz.box';
+var username = 'docker';
+var password = 'docker';
+var host = 'auth-db';
 var port = '5432';
 var database = 'oauthdb';
 

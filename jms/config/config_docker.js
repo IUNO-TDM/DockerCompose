@@ -6,12 +6,12 @@ var self = {
 self.HOST_SETTINGS = {
     MARKETPLACE_CORE: {
         PROTOCOL:'http',
-        HOST: 'test-tdm.fritz.box',
+        HOST: 'core',
         PORT: 3002
     },
     OAUTH_SERVER: {
         PROTOCOL:'http',
-        HOST: 'test-tdm.fritz.box',
+        HOST: 'auth',
         PORT: 3006
     }
 };

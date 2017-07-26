@@ -6,15 +6,24 @@ services:
       - "3005:3005"
       - "3006:3006"
   core:
-      build: core
-      ports:
-        - "3002:3002"
+    build: core
+    ports:
+      - "3002:3002"
   jms:
-      build: jms
-      ports:
-        - "3001:3001"
+    build: jms
+    ports:
+      - "3001:3001"
   jmw:
-      build: jmw
-      ports:
-        - "3004:3004"
+    build: jmw
+    ports:
+      - "3004:3004"
+  core-db:
+    build: core/MarketplaceCore/SqlScripts
+    ports:
+      - "5432:5432"
+  auth-db:
+    build: auth/OAuth2Server/SqlScripts
+    ports:
+      - "5432:5432"
+
 

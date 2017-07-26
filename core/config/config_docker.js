@@ -11,18 +11,18 @@ var self = {};
 
 // ---- Database Credentials ----
 
-var username = 'postgres';
-var password = 're7ahpheibaiweey';
-var host = 'test-tdm.fritz.box';
+var username = 'docker';
+var password = 'docker';
+var host = 'core-db';
 var port = '5432';
-var database = 'intechdb';
+var database = 'MarketplaceCore';
 
 // ---- CONFIGURATION EXPORT ----
 
 self.HOST_SETTINGS = {
     OAUTH_SERVER: {
         PROTOCOL: 'http',
-        HOST: 'test-tdm.fritz.box',
+        HOST: 'oauth',
         PORT: 3006
     }
 };
