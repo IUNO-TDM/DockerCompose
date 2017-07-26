@@ -10,13 +10,14 @@ WORKDIR /usr/src/app
 # Bundle app source
 
 COPY OAuth2Server/OAuth2Server-app /usr/src/app
+COPY config/ /usr/src/app/config/
 
 # Install app dependencies
 RUN npm install
 
 
 # Set ENV Variables
-ENV TDM_OAUTH_CONFIG config_test
+ENV TDM_OAUTH_CONFIG config_docker
 ENV NODE_ENV testing
 
 EXPOSE 3005

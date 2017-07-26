@@ -67,3 +67,5 @@ fabric.properties
 
 .idea/dbnavigator.xml
 .idea/vcs.xml
+
+private*
