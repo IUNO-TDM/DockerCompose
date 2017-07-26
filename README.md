@@ -1,3 +1,6 @@
+--- PROJECT STILL UNDER DEVELOPMENT ---
+--- MAY NOT BUILD OR WORK AS INTENDED ---
+
 # SIMPLE MARKETPLACE DEPLOYMENT
 
 Execute the following steps for an easy simple deployment of the technology data marketplace. We've setup a docker-compose script to deploy and configure all components within few steps.
@@ -12,5 +15,6 @@ cd TDM-Docker
 git submodule update --remote --merge
 docker-compose up
 ```
-
+--- PROJECT STILL UNDER DEVELOPMENT ---
+--- MAY NOT BUILD OR WORK AS INTENDED ---
 
