@@ -1,10 +1,26 @@
 version: "3.0"
 services:
+  core-db:
+    build: core/MarketplaceCore/SqlScripts
+    ports:
+      - "5432:5432"
+  auth-db:
+    build: auth/OAuth2Server/SqlScripts
+    ports:
+      - "5432:5432"
   auth:
     build: auth
     ports:
       - "3005:3005"
       - "3006:3006"
+  payment:
+    build: payment
+    ports:
+      - "8080:8080"
+  vault:
+    build: vault
+    ports:
+      - "8081:8081"
   core:
     build: core
     ports:
@@ -17,21 +33,6 @@ services:
     build: jmw
     ports:
       - "3004:3004"
-  core-db:
-    build: core/MarketplaceCore/SqlScripts
-    ports:
-      - "5432:5432"
-  auth-db:
-    build: auth/OAuth2Server/SqlScripts
-    ports:
-      - "5432:5432"
-  payment:
-    build: payment
-    ports:
-      - "8080:8080"
-  vault:
-    build: vault
-    ports:
-      - "8081:8081"
+
 
 
