@@ -6,6 +6,7 @@
     <mapping directory="$PROJECT_DIR$/core/MarketplaceCore" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/jms/JuiceMachineService" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/jmw/JuiceMarketplaceWebsite" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/ps/PaymentService" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/payment/PaymentService" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vault/BitcoinVault" vcs="Git" />
   </component>
 </project>
