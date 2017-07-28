@@ -1,21 +1,22 @@
 FROM maven:alpine
 
+VOLUME root/.m2
+VOLUME root/.PaymentService
+
 # Create app directory
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 COPY PaymentService/pom.xml /usr/src/app
-#RUN mvn dependency:resolve
-#RUN mvn verify
+
+RUN mvn verify clean --fail-never
 
 # Adding source, compile and package into a fat jar
 COPY PaymentService/src /usr/src/app/src
 
-RUN mvn clean package
+RUN mvn verify
 
 EXPOSE 8080
 
 CMD mvn jetty:run
-
-#TODO: Make wallet files accessable via a volume
