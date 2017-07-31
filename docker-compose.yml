@@ -41,6 +41,6 @@ services:
       - "3004:3004"
 
 volumes:
-  - payment-wallet:
-  - vault-wallet:
-  - m2-repo:
+  payment-wallet:
+  vault-wallet:
+  m2-repo:

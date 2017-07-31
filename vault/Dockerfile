@@ -19,4 +19,4 @@ RUN mvn verify
 
 EXPOSE 8081
 
-CMD mvn jetty:run
+CMD mvn jetty:run -Dlistening-interface=0.0.0.0
