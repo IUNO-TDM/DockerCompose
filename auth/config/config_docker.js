@@ -13,6 +13,7 @@ var self = {
 
 };
 
+self.LOG_LEVEL = 'info';
 
 var username = 'docker';
 var password = 'docker';

@@ -7,7 +7,7 @@ var self = {};
 
 
 // ---- CONFIGURATION EXPORT ----
-self.LOG_LEVEL = 'debug';
+self.LOG_LEVEL = 'info';
 
 self.HOST_SETTINGS = {
     MARKETPLACE_CORE: {
@@ -43,7 +43,7 @@ self.OAUTH_PROVIDER = {
 };
 
 self.OAUTH_CREDENTIALS = {
-    CLIENT_ID: 'adb4c297-45bd-437e-ac90-9179eea41730',
+    CLIENT_ID: 'adb4c297-45bd-437e-ac90-9179eea41744',
     CLIENT_SECRET: 'IsSecret'
 };
 

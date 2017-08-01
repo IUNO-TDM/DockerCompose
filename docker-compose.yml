@@ -3,7 +3,7 @@ services:
   core-db:
     build: core/MarketplaceCore/SqlScripts
     ports:
-      - "5432:5432"
+      - "5433:5432"
   auth-db:
     build: auth/OAuth2Server/SqlScripts
     ports:
@@ -13,20 +13,20 @@ services:
     ports:
       - "3005:3005"
       - "3006:3006"
-  payment:
+  payment_core:
     build: payment
     ports:
-      - "8080:8080"
+      - "8082:8080"
     volumes:
       - vault-wallet:/root/.PaymentService
       - m2-repo:/root/.m2
-  vault:
-    build: vault
-    ports:
-      - "8081:8081"
-    volumes:
-      - payment-wallet:/root/.Vault
-      - m2-repo:/root/.m2
+#  vault:
+#    build: vault
+#    ports:
+#      - "8081:8081"
+#    volumes:
+#      - payment-wallet:/root/.Vault
+#      - m2-repo:/root/.m2
   core:
     build: core
     ports:
@@ -44,3 +44,8 @@ volumes:
   payment-wallet:
   vault-wallet:
   m2-repo:
+
+networks:
+  default:
+    external:
+      name: iuno-network

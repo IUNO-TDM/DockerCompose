@@ -1,6 +1,7 @@
 
 var self = {
 };
+self.LOG_LEVEL = 'info';
 
 // ---- CONFIGURATION EXPORT ----
 self.HOST_SETTINGS = {
@@ -16,7 +17,7 @@ self.HOST_SETTINGS = {
     }
 };
 self.OAUTH_CREDENTIALS = {
-    CLIENT_ID: 'ddb4c297-45bd-437e-ac90-9179eea41730',
+    CLIENT_ID: 'adb4c297-45bd-437e-ac90-9179eea41747',
     CLIENT_SECRET: 'IsSecret'
 };
 
