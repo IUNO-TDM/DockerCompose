@@ -18,14 +18,14 @@ services:
     ports:
       - "8082:8080"
     volumes:
-      - vault-wallet:/root/.PaymentService
+      - payment-wallet:/root/.PaymentService
       - m2-repo:/root/.m2
 #  vault:
 #    build: vault
 #    ports:
 #      - "8081:8081"
 #    volumes:
-#      - payment-wallet:/root/.Vault
+#      - vault-wallet:/root/.Vault
 #      - m2-repo:/root/.m2
   core:
     build: core
