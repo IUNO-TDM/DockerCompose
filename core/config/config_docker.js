@@ -46,7 +46,7 @@ self.OAUTH_CREDENTIALS = {
 
 self.USER = {
     uuid: 'adb4c297-45bd-437e-ac90-9179eea41735',
-    role: 'MarketplaceCore'
+    roles: ['MarketplaceCore']
 };
 
 
