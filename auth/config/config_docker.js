@@ -23,6 +23,31 @@ var database = 'oauthdb';
 
 
 self.DB_CONNECTION_STRING = 'postgres://{0}:{1}@{2}:{3}/{4}'.format(username, password, host, port, database);
+self.OAUTH_CREDENTIALS = {
+    CLIENT_ID: 'adb4c297-45bd-437e-ac90-9179eea41744',
+    CLIENT_SECRET: 'IsSecret',
+    CALLBACK_URL: 'http://localhost:3004/auth/iuno/callback'
+};
+
+self.OAUTH_PROVIDER = {
+    facebookAuth: {
+        'clientID': '', // your App ID
+        'clientSecret': '', // your App Secret
+        'callbackURL': '',
+        'profileURL': '',
+        'profileFields': ['id', 'name', 'photos']
+    },
+    twitterAuth: {
+        'consumerKey': '',
+        'consumerSecret': '',
+        'callbackURL': ''
+    },
+    googleAuth: {
+        'clientID': '',
+        'clientSecret': '',
+        'callbackURL': ''
+    }
+};
 
 
 module.exports = self;

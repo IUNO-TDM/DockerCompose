@@ -34,11 +34,18 @@ self.HOST_SETTINGS = {
         PROTOCOL: 'http',
         HOST: 'vault',
         PORT: 8081
+    },
+    LICENSE_CENTRAL: {
+        PROTOCOL: 'https',
+        HOST: 'lc.codemeter.com/26959-02/marketplaceapi',
+        PORT: 443
     }
 };
 
 self.DB_CONNECTION_STRING = 'postgres://{0}:{1}@{2}:{3}/{4}'.format(username, password, host, port, database);
+
 self.LOG_LEVEL = 'debug';
+
 self.OAUTH_CREDENTIALS = {
     CLIENT_ID: 'adb4c297-45bd-437e-ac90-9179eea41745',
     CLIENT_SECRET: 'IsSecret'
@@ -49,6 +56,22 @@ self.USER = {
     roles: ['MarketplaceCore']
 };
 
+
+self.LICENSE_CENTRAL = {
+    BASIC_AUTH: {
+        USER: '',
+        PASSWORD: ''
+    },
+    CERT: {
+        CERT_FILE_PATH: '',
+        KEY_FILE_PATH: '',
+        P12_FILE_PATH: '',
+        PASS_PHRASE: ''
+    },
+    FIRM_CODE: 6000274,
+    CMACTID: 1000,
+    LCACTION:'autoupdate'
+};
 
 
 module.exports = self;
