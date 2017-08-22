@@ -17,12 +17,12 @@ self.HOST_SETTINGS = {
     },
     OAUTH_SERVER: {
         PROTOCOL: 'HTTP',
-        HOST: 'auth',
+        HOST: 'localhost',
         PORT: 3005
     },
     OAUTH_SERVER_SECURE: {
         PROTOCOL: 'HTTP',
-        HOST: 'localhost',
+        HOST: 'auth',
         PORT: 3006
     }
 };
