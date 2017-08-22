@@ -17,7 +17,7 @@ RUN npm install
 
 
 # Set ENV Variables
-ENV TDM_JMW_CONFIG config_docker
+ENV TDM_JMW_CONFIG private_config
 ENV NODE_ENV testing
 
 EXPOSE 3004
