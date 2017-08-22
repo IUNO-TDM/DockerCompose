@@ -11,7 +11,7 @@ Following software is needed:
 git clone https://github.com/IUNO-TDM/TDM-Docker.git
 cd TDM-Docker
 git submodule init
-git submodule update --remote --merge
+git submodule update
 docker network create iuno-network
 docker-compose up
 ```
