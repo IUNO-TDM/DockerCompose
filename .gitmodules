@@ -9,7 +9,7 @@
 [submodule "jmw/JuiceMarketplaceWebsite"]
 	path = jmw/JuiceMarketplaceWebsite
 	url = https://github.com/IUNO-TDM/JuiceMarketplaceWebsite.git
-	branch = master
+	branch = testing
 [submodule "auth/OAuth2Server"]
 	path = auth/OAuth2Server
 	url = https://github.com/IUNO-TDM/OAuth2Server.git
@@ -21,4 +21,4 @@
 [submodule "payment/PaymentService"]
 	path = payment/PaymentService
 	url = https://github.com/IUNO-TDM/PaymentService.git
-	branch = master
+	branch = testing
