@@ -19,4 +19,4 @@ RUN mvn verify
 
 EXPOSE 8080
 
-CMD mvn jetty:run -Dlistening-interface=0.0.0.0
+CMD mvn jetty:run -Dlistening-interface=0.0.0.0 -DwalletSeed=never,use,this,seed,never,use,this,seed,only,use,market,place
