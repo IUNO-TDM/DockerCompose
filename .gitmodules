@@ -1,24 +1,24 @@
 [submodule "core/MarketplaceCore"]
 	path = core/MarketplaceCore
 	url = https://github.com/IUNO-TDM/MarketplaceCore.git
-	branch = master
+	branch = testing
 [submodule "jms/JuiceMachineService"]
 	path = jms/JuiceMachineService
 	url = https://github.com/IUNO-TDM/JuiceMachineService.git
-	branch = master
+	branch = testing
 [submodule "jmw/JuiceMarketplaceWebsite"]
 	path = jmw/JuiceMarketplaceWebsite
 	url = https://github.com/IUNO-TDM/JuiceMarketplaceWebsite.git
-	branch = master
+	branch = testing
 [submodule "auth/OAuth2Server"]
 	path = auth/OAuth2Server
 	url = https://github.com/IUNO-TDM/OAuth2Server.git
-	branch = master
+	branch = testing
 [submodule "vault/BitcoinVault"]
 	path = vault/BitcoinVault
 	url = https://github.com/goergch/BitcoinVault.git
-	branch = master
+	branch = testing
 [submodule "payment/PaymentService"]
 	path = payment/PaymentService
 	url = https://github.com/IUNO-TDM/PaymentService.git
-	branch = master
+	branch = testing
