@@ -63,8 +63,6 @@ self.LICENSE_CENTRAL = {
         PASSWORD: ''
     },
     CERT: {
-        CERT_FILE_PATH: '',
-        KEY_FILE_PATH: '',
         P12_FILE_PATH: '',
         PASS_PHRASE: ''
     },
