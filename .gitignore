@@ -69,4 +69,4 @@ fabric.properties
 .idea/vcs.xml
 
 private*
-cert/*
+cert/
