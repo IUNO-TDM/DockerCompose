@@ -63,7 +63,7 @@ self.LICENSE_CENTRAL = {
         PASSWORD: ''
     },
     CERT: {
-        P12_FILE_PATH: '',
+        P12_FILE_PATH: '', // -- /usr/src/app/cert/example.p12
         PASS_PHRASE: ''
     },
     FIRM_CODE: 6000274,
