@@ -8,11 +8,11 @@ services:
     build: auth/OAuth2Server/SqlScripts
     ports:
       - "5432:5432"
-#  auth:
-#    build: auth
-#    ports:
-#      - "3005:3005"
-#      - "3006:3006"
+  auth:
+    build: auth
+    ports:
+      - "3005:3005"
+      - "3006:3006"
   payment_core:
     build: payment
     ports:
@@ -27,18 +27,18 @@ services:
 #    volumes:
 #      - vault-wallet:/root/.Vault
 #      - m2-repo:/root/.m2
-#  core:
-#    build: core
-#    ports:
-#      - "3002:3002"
-#  jms:
-#    build: jms
-#    ports:
-#      - "3001:3001"
-#  jmw:
-#    build: jmw
-#    ports:
-#      - "3004:3004"
+  core:
+    build: core
+    ports:
+      - "3002:3002"
+  jms:
+    build: jms
+    ports:
+      - "3001:3001"
+  jmw:
+    build: jmw
+    ports:
+      - "3004:3004"
 
 volumes:
   payment-wallet:
