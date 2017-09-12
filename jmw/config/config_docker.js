@@ -7,7 +7,7 @@ var self = {};
 
 
 // ---- CONFIGURATION EXPORT ----
-self.LOG_LEVEL = 'info';
+self.LOG_LEVEL = 'debug';
 
 self.HOST_SETTINGS = {
     MARKETPLACE_CORE: {

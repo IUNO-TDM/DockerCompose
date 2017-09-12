@@ -1,11 +1,11 @@
 version: "3.0"
 services:
   core-db:
-    build: core/MarketplaceCore/SqlScripts
+    build: core-db
     ports:
       - "5433:5432"
   auth-db:
-    build: auth/OAuth2Server/SqlScripts
+    build: auth-db
     ports:
       - "5432:5432"
   auth:
