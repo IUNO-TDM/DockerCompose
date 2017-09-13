@@ -6,4 +6,8 @@ ENV POSTGRES_DB MarketplaceCore
 
 ADD init_data.sql /docker-entrypoint-initdb.d/
 
+VOLUME /etc/postgresql/data
+VOLUME /var/log/postgresql
+VOLUME /var/lib/postgresql/data
+
 EXPOSE 5432
