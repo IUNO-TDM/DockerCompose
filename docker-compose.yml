@@ -13,6 +13,8 @@ services:
     ports:
       - "3005:3005"
       - "3006:3006"
+    volumes:
+      - user-images:/usr/src/app/images
   payment_core:
     build: payment
     ports:
@@ -44,6 +46,7 @@ volumes:
   payment-wallet:
   vault-wallet:
   m2-repo:
+  user-images:
 
 networks:
   default:

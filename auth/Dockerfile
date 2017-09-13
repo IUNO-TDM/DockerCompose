@@ -20,6 +20,8 @@ RUN npm install
 ENV TDM_OAUTH_CONFIG config_docker
 ENV NODE_ENV testing
 
+VOLUME /usr/src/app/images
+
 EXPOSE 3005 3006
 
 CMD [ "pm2-docker", "npm", "--", "start" ]
