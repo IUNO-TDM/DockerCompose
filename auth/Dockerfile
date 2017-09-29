@@ -18,7 +18,7 @@ RUN npm install
 
 # Set ENV Variables
 ENV TDM_OAUTH_CONFIG config_docker
-ENV NODE_ENV testing
+ENV NODE_ENV docker
 
 EXPOSE 3005 3006
 
