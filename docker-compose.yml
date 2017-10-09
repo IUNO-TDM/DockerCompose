@@ -1,11 +1,11 @@
 version: "3.0"
 services:
   core-db:
-    build: core/MarketplaceCore/SqlScripts
+    build: core-db
     ports:
       - "5433:5432"
   auth-db:
-    build: auth/OAuth2Server/SqlScripts
+    build: auth-db
     ports:
       - "5432:5432"
   auth:
@@ -13,6 +13,8 @@ services:
     ports:
       - "3005:3005"
       - "3006:3006"
+    volumes:
+      - user-images:/usr/src/app/images
   payment_core:
     build: payment
     ports:
@@ -44,6 +46,8 @@ volumes:
   payment-wallet:
   vault-wallet:
   m2-repo:
+  user-images:
+
 
 networks:
   default:
