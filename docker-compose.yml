@@ -8,6 +8,7 @@ services:
       - core-db-data:/etc/postgresql/data
       - core-db-data:/var/log/postgresql
       - core-db-data:/var/lib/postgresql/data
+    restart: always
   auth-db:
     build: auth-db
     ports:
@@ -16,6 +17,7 @@ services:
       - auth-db-data:/etc/postgresql/data
       - auth-db-data:/var/log/postgresql
       - auth-db-data:/var/lib/postgresql/data
+    restart: always
   auth:
     build: auth
     ports:
@@ -23,6 +25,7 @@ services:
       - "3006:3006"
     volumes:
       - user-images:/usr/src/app/images
+    restart: always
   payment_core:
     build: payment
     ports:
@@ -30,6 +33,7 @@ services:
     volumes:
       - payment-wallet:/root/.PaymentService
       - m2-repo:/root/.m2
+    restart: always
 #  vault:
 #    build: vault
 #    ports:
@@ -41,14 +45,17 @@ services:
     build: core
     ports:
       - "3002:3002"
+    restart: always
   jms:
     build: jms
     ports:
       - "3001:3001"
+    restart: always
   jmw:
     build: jmw
     ports:
-      - "3004:3004"
+      -
+    restart: always
 
 volumes:
   payment-wallet:
