@@ -54,7 +54,7 @@ services:
   jmw:
     build: jmw
     ports:
-      -
+      - "3004:3004"
     restart: always
 
 volumes:
