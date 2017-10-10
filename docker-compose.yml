@@ -12,28 +12,28 @@ services:
   auth-db:
     build: auth-db
     ports:
-      - "5432:5432"
+      - "5432:5432"dock
     volumes:
       - auth-db-data:/etc/postgresql/data
       - auth-db-data:/var/log/postgresql
       - auth-db-data:/var/lib/postgresql/data
     restart: always
-  auth:
-    build: auth
-    ports:
-      - "3005:3005"
-      - "3006:3006"
-    volumes:
-      - user-images:/usr/src/app/images
-    restart: always
-  payment_core:
-    build: payment
-    ports:
-      - "8082:8080"
-    volumes:
-      - payment-wallet:/root/.PaymentService
-      - m2-repo:/root/.m2
-    restart: always
+#  auth:
+#    build: auth
+#    ports:
+#      - "3005:3005"
+#      - "3006:3006"
+#    volumes:
+#      - user-images:/usr/src/app/images
+#    restart: always
+#  payment_core:
+#    build: payment
+#    ports:
+#      - "8082:8080"
+#    volumes:
+#      - payment-wallet:/root/.PaymentService
+#      - m2-repo:/root/.m2
+#    restart: always
 #  vault:
 #    build: vault
 #    ports:
@@ -41,21 +41,21 @@ services:
 #    volumes:
 #      - vault-wallet:/root/.Vault
 #      - m2-repo:/root/.m2
-  core:
-    build: core
-    ports:
-      - "3002:3002"
-    restart: always
-  jms:
-    build: jms
-    ports:
-      - "3001:3001"
-    restart: always
-  jmw:
-    build: jmw
-    ports:
-      - "3004:3004"
-    restart: always
+#  core:
+#    build: core
+#    ports:
+#      - "3002:3002"
+#    restart: always
+#  jms:
+#    build: jms
+#    ports:
+#      - "3001:3001"
+#    restart: always
+#  jmw:
+#    build: jmw
+#    ports:
+#      - "3004:3004"
+#    restart: always
 
 volumes:
   payment-wallet:
