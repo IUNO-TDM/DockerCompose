@@ -14,10 +14,6 @@
 	path = auth/OAuth2Server
 	url = https://github.com/IUNO-TDM/OAuth2Server.git
 	branch = testing
-[submodule "vault/BitcoinVault"]
-	path = vault/BitcoinVault
-	url = https://github.com/goergch/BitcoinVault.git
-	branch = testing
 [submodule "payment/PaymentService"]
 	path = payment/PaymentService
 	url = https://github.com/IUNO-TDM/PaymentService.git
