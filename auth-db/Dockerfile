@@ -4,7 +4,9 @@ ENV POSTGRES_USER docker
 ENV POSTGRES_PASSWORD docker
 ENV POSTGRES_DB oauthdb
 
-COPY pg_hba.conf /
+ADD pg_hba.conf /
+RUN chmod 777 /pg_hba.conf
+
 ADD init_data.sql /docker-entrypoint-initdb.d/
 ADD set-config.sh /docker-entrypoint-initdb.d/
 

@@ -12,7 +12,7 @@ services:
   auth-db:
     build: auth-db
     ports:
-      - "5432:5432"dock
+      - "5432:5432"
     volumes:
       - auth-db-data:/etc/postgresql/data
       - auth-db-data:/var/log/postgresql
