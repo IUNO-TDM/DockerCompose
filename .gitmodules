@@ -22,3 +22,6 @@
 	path = payment/PaymentService
 	url = https://github.com/IUNO-TDM/PaymentService.git
 	branch = master
+[submodule "couponserver/CouponServer"]
+	path = couponserver/CouponServer
+	url = https://github.com/IUNO-TDM/CouponServer
