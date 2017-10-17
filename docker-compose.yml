@@ -56,6 +56,12 @@ services:
     ports:
       - "3004:3004"
     restart: always
+  couponserver:
+    build: couponserver
+    ports:
+      - "3010:3010"
+    volumes:
+      - coupon-db:/usr/src/db
 
 volumes:
   payment-wallet:
@@ -64,6 +70,7 @@ volumes:
   user-images:
   auth-db-data:
   core-db-data:
+  coupon-db:
 
 networks:
   default:
