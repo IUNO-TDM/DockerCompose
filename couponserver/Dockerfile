@@ -6,13 +6,15 @@ RUN npm install pm2 -g
 
 RUN mkdir -p /usr/src/app
 RUN mkdir -p /usr/src/db
+RUN mkdir -p /usr/src/cert
+
 WORKDIR /usr/src/app
 
 # Bundle app source
 
 COPY CouponServer/ /usr/src/app
 COPY config/ /usr/src/app/config/
-COPY cert/ /usr/src/app/cert/
+COPY cert/ /usr/src/cert/
 
 # Install app dependencies
 RUN npm install
