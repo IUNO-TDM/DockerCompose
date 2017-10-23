@@ -1,12 +1,11 @@
 FROM node:alpine
 RUN npm install pm2 -g
-
+RUN apk add --update openssl
 
 # Create app directory
 
 RUN mkdir -p /usr/src/app
 RUN mkdir -p /usr/src/db
-RUN mkdir -p /usr/src/cert
 
 WORKDIR /usr/src/app
 
@@ -14,7 +13,7 @@ WORKDIR /usr/src/app
 
 COPY CouponServer/ /usr/src/app
 COPY config/ /usr/src/app/config/
-COPY cert/ /usr/src/cert/
+COPY cert/ /usr/src/app/cert/
 
 # Install app dependencies
 RUN npm install
