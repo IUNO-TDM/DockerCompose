@@ -41,12 +41,12 @@ services:
     build: jmw
     ports:
       - "3004:3004"
-  couponserver:
-    build: couponserver
-    ports:
-      - "3010:3010"
-    volumes:
-      - coupon-db:/usr/src/db
+#  couponserver:
+#    build: couponserver
+#    ports:
+#      - "3010:3010"
+#    volumes:
+#      - coupon-db:/usr/src/db
 
 volumes:
   payment-wallet:
