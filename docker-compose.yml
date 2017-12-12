@@ -22,13 +22,13 @@ services:
     volumes:
       - payment-wallet:/root/.PaymentService
       - m2-repo:/root/.m2
-#  vault:
-#    build: vault
-#    ports:
-#      - "8081:8081"
-#    volumes:
-#      - vault-wallet:/root/.Vault
-#      - m2-repo:/root/.m2
+  vault:
+    build: vault
+    ports:
+      - "8081:8081"
+    volumes:
+      - vault-wallet:/root/.Vault
+      - m2-repo:/root/.m2
   core:
     build: core
     ports:
@@ -41,12 +41,12 @@ services:
     build: jmw
     ports:
       - "3004:3004"
-#  couponserver:
-#    build: couponserver
-#    ports:
-#      - "3010:3010"
-#    volumes:
-#      - coupon-db:/usr/src/db
+  couponserver:
+    build: couponserver
+    ports:
+      - "3010:3010"
+    volumes:
+      - coupon-db:/usr/src/db
 
 volumes:
   payment-wallet:
