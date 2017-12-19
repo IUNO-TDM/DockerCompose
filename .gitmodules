@@ -21,3 +21,6 @@
 [submodule "couponserver/CouponServer"]
 	path = couponserver/CouponServer
 	url = https://github.com/IUNO-TDM/CouponServer
+[submodule "vault/BitcoinVault"]
+	path = vault/BitcoinVault
+	url = https://github.com/IUNO-TDM/BitcoinVault.git

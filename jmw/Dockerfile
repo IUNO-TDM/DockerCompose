@@ -14,6 +14,9 @@ COPY config/ /usr/src/app/config/
 
 # Install app dependencies
 RUN npm install
+RUN npm install -g @angular/cli
+
+RUN ng build
 
 
 # Set ENV Variables
