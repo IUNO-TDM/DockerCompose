@@ -34,13 +34,13 @@ services:
       - payment-wallet:/root/.PaymentService
       - m2-repo:/root/.m2
     restart: always
-#  vault:
-#    build: vault
-#    ports:
-#      - "8081:8081"
-#    volumes:
-#      - vault-wallet:/root/.Vault
-#      - m2-repo:/root/.m2
+  vault:
+    build: vault
+    ports:
+      - "8081:8081"
+    volumes:
+      - vault-wallet:/root/.Vault
+      - m2-repo:/root/.m2
   core:
     build: core
     ports:
